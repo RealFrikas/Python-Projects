@@ -19,7 +19,9 @@ print("Script started. Press ESC to stop.")
 
 while running:
     # Press E
-    keyboard.press_and_release('e')
+    keyboard.press('e')
+    time.sleep(0.4)
+    keyboard.release('e')
     print("Pressed E")
     time.sleep(3)
 
@@ -36,7 +38,9 @@ while running:
     keyboard.release('d')
 
     # Press Enter
-    keyboard.press_and_release('enter')
+    keyboard.press('enter')
+    time.sleep(0.4)
+    keyboard.release('enter')
     print("Pressed Enter")
     time.sleep(14)
 
